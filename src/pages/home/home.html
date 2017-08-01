@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      MBAEmergência
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-grid>
+
+    <ion-row>
+      <ion-label class="center">Qual é a sua emergência?</ion-label>
+    </ion-row>
+
+    <ion-row>
+      <span>Dica: Fale algo como "Socorro!", "Ligar para polícia!", "Preciso de um bombeiro!".</span>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <button ion-button full (click)="requestSpeech()">Solicitar Novamente</button>
+</ion-footer>
